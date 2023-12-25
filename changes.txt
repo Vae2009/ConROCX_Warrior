@@ -1,0 +1,39 @@
+Ver 2.0.2
+	-Started to add support for translations.
+Ver 2.0.0
+	-Added ranks to abilities that were missing.
+	-Added Bloodrage to Spellmenu.
+
+Ver 1.13.10
+	-Found Heroic Strike Rank 9 missing.
+	-Tweaked Whirlwind slightly when Bloodthirst is ready.
+
+Ver 1.13.9
+	-Gave Sunder Armor a stack count input field in spellmenu.
+
+Ver 1.13.8
+	-Updated rotation around Fury/Berserker.
+
+Ver 1.13.7
+	-Fix for Sunder Armor duration code.
+
+Ver 1.13.6
+	-Some QoL tweaks.
+
+Ver 1.13.5
+	-Created and Activated Spellmenu.
+
+Ver 1.13.4
+	-Made adjustments to new code for different locales.
+
+Ver 1.13.3
+	-Added a rage pool requirement to sunder armor so it doesnt suck all your Mortal Strike or Bloodthirst rage.
+
+Ver 1.13.2
+	-Complete update.
+
+Ver 1.13.1
+	-Minor update.
+
+Ver 1.13.0
+	-Initial release for Classic WoW.

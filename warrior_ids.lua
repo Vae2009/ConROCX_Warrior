@@ -1,4 +1,5 @@
 local ConROC_Warrior, ids = ...;
+local ConROC_Warrior, optionMaxIds = ...;
 
 --General
 	ids.Racial = {
@@ -18,12 +19,13 @@ local ConROC_Warrior, ids = ...;
 --Arms
 	ids.Arms_Ability = {
 		BattleStance = 2457,
+		BladeStorm = 46924, 
 		ChargeRank1 = 100,
 		ChargeRank2 = 6178,
 		ChargeRank3 = 11578,
 		HamstringRank1 = 1715,
-		HamstringRank2 = 7372,
-		HamstringRank3 = 7373,
+		--HamstringRank2 = 7372,
+		--HamstringRank3 = 7373,
 		HeroicStrikeRank1 = 78,
 		HeroicStrikeRank2 = 284,
 		HeroicStrikeRank3 = 285,
@@ -32,21 +34,30 @@ local ConROC_Warrior, ids = ...;
 		HeroicStrikeRank6 = 11565,
 		HeroicStrikeRank7 = 11566,
 		HeroicStrikeRank8 = 11567,
-		HeroicStrikeRank9 = 25286,--
+		HeroicStrikeRank9 = 25286,
+		HeroicStrikeRank10 = 29707,-- TBC
+		HeroicStrikeRank11 = 30324,-- TBC
+		HeroicStrikeRank12 = 47449,-- wrath
+		HeroicStrikeRank13 = 47450,-- wrath
+		HeroicThrow = 57755,-- wrath
 		MockingBlowRank1 = 694,
-		MockingBlowRank2 = 7400,
-		MockingBlowRank3 = 7402,
-		MockingBlowRank4 = 20559,
-		MockingBlowRank5 = 20560,
+		--MockingBlowRank2 = 7400,
+		--MockingBlowRank3 = 7402,
+		--MockingBlowRank4 = 20559,
+		--MockingBlowRank5 = 20560,
 		MortalStrikeRank1 = 12294,
 		MortalStrikeRank2 = 21551,
 		MortalStrikeRank3 = 21552,
 		MortalStrikeRank4 = 21553,
+		MortalStrikeRank5 = 25248,-- TBC
+		MortalStrikeRank6 = 30330,-- TBC
+		MortalStrikeRank7 = 47485,-- wrath
+		MortalStrikeRank8 = 47486,-- wrath
 		OverpowerRank1 = 7384,
-		OverpowerRank2 = 7887,
-		OverpowerRank3 = 11584,
-		OverpowerRank4 = 11585,
-		SweepingStrikes = 12292,
+		--OverpowerRank2 = 7887,
+		--OverpowerRank3 = 11584,
+		--OverpowerRank4 = 11585,
+		SweepingStrikes = 12328,
 		RendRank1 = 772,
 		RendRank2 = 6546,
 		RendRank3 = 6547,
@@ -54,40 +65,21 @@ local ConROC_Warrior, ids = ...;
 		RendRank5 = 11572,
 		RendRank6 = 11573,
 		RendRank7 = 11574,
+		RendRank8 = 25208,-- TBC
+		RendRank9 = 46845,-- wrath
+		RendRank10 = 47465,-- wrath
 		Retaliation = 20230,
+		ShatteringThrow = 64382,-- wrath
 		ThunderClapRank1 = 6343,
 		ThunderClapRank2 = 8198,
 		ThunderClapRank3 = 8204,
 		ThunderClapRank4 = 8205,
 		ThunderClapRank5 = 11580,
 		ThunderClapRank6 = 11581,
-	}
-	ids.Arms_Talent = {
-		ImprovedHeroicStrike = 1,
-		Defleciton = 2,
-		ImprovedRend = 3,
-		
-		ImprovedCharge = 4,
-		TacticalMastery = 5,
-		ImprovedThunderClap = 6,
-		
-		ImprovedOverpower = 7,
-		AngerManagement = 8,
-		DeepWounds = 9,
-		
-		TwoHandedWeaponSpecialization = 10,
-		Impale = 11,
-		
-		AxeSpecialization = 12,
-		SweepingStrikes = 13,
-		MaceSpecialization = 14,
-		SwordSpecialization = 15,
-		
-		PolearmSpecialization = 16,
-		ImprovedHamstring = 17,
-		
-		MortalStrike = 18,
-	}		
+		ThunderClapRank7 = 25264,-- TBC
+		ThunderClapRank8 = 47501,-- wrath
+		ThunderClapRank9 = 47502,-- wrath
+	}	
 --Fury
 	ids.Fury_Ability = {
 		BattleShoutRank1 = 6673,
@@ -96,130 +88,125 @@ local ConROC_Warrior, ids = ...;
 		BattleShoutRank4 = 11549,
 		BattleShoutRank5 = 11550,
 		BattleShoutRank6 = 11551,
-		BattleShoutRank7 = 25289,--		
+		BattleShoutRank7 = 25289,		
+		BattleShoutRank8 = 2048,-- TBC
+		BattleShoutRank9 = 47436,-- wrath		
 		BerserkerRage = 18499,
 		BerserkerStance = 2458,
 		BloodthirstRank1 = 23881,
-		BloodthirstRank2 = 23892,
-		BloodthirstRank3 = 23893,
-		BloodthirstRank4 = 23894,
+		--BloodthirstRank2 = 23892,
+		--BloodthirstRank3 = 23893,
+		--BloodthirstRank4 = 23894,
 		ChallengingShout = 1161,
 		CleaveRank1 = 845,
 		CleaveRank2 = 7369,
 		CleaveRank3 = 11608,
 		CleaveRank4 = 11609,
 		CleaveRank5 = 20569,
-		DeathWish = 12328,
+		CleaveRank6 = 25231,-- TBC
+		CleaveRank7 = 47519,-- wrath
+		CleaveRank8 = 47520,-- wrath
+		CommandingShoutRank1 = 469,-- TBC
+		CommandingShoutRank2 = 47439,-- wrath
+		CommandingShoutRank3 = 47440,-- wrath
+		DeathWish = 12292,
 		DemoralizingShoutRank1 = 1160,
 		DemoralizingShoutRank2 = 6190,
 		DemoralizingShoutRank3 = 11554,
 		DemoralizingShoutRank4 = 11555,
 		DemoralizingShoutRank5 = 11556,
+		DemoralizingShoutRank6 = 25202,-- TBC
+		DemoralizingShoutRank7 = 25203,-- TBC
+		DemoralizingShoutRank8 = 47437,-- wrath
+		EnragedRegeneration = 55694,-- wrath
 		ExecuteRank1 = 5308,
 		ExecuteRank2 = 20658,
 		ExecuteRank3 = 20660,
 		ExecuteRank4 = 20661,
 		ExecuteRank5 = 20662,
+		ExecuteRank6 = 25234,-- TBC
+		ExecuteRank7 = 25236,-- wrath
+		ExecuteRank8 = 47470,-- wrath
+		ExecuteRank9 = 47471,-- wrath
+		HeroicFury = 60970,-- wrath
 		InterceptRank1 = 20252,
-		InterceptRank2 = 20616,
-		InterceptRank3 = 20617,
+		--InterceptRank2 = 20616,
+		--InterceptRank3 = 20617,
 		IntimidatingShout = 5246,
 		PiercingHowl = 12323,
 		PummelRank1 = 6552,
-		PummelRank2 = 6554,
+		--PummelRank2 = 6554,
 		Recklessness = 1719,
 		SlamRank1 = 1464,
 		SlamRank2 = 8820,
 		SlamRank3 = 11604,
 		SlamRank4 = 11605,
+		SlamRank5 = 25241,-- TBC
+		SlamRank6 = 25242,-- TBC
+		SlamRank7 = 47474,-- wrath
+		SlamRank8 = 47475,-- wrath
+		VictoryRush = 34428,--
 		Whirlwind = 1680,
-	}
-	ids.Fury_Talent = {
-		BoomingVoice = 1,
-		Cruelty = 2,
-		
-		ImprovedDemoralizingShout = 3,
-		UnbridledWrath = 4,
-		
-		ImprovedCleave = 5,
-		PiercingHowl = 6,
-		BloodCraze = 7,
-		ImprovedBattleShout = 8,
-		
-		DualWieldSpecialization = 9,
-		ImprovedExecute = 10,
-		Enrage = 11,
-		
-		ImprovedSlam = 12,
-		DeathWish = 13,
-		ImprovedIntercept = 14,
-		
-		ImprovedBerserkerRage = 15,
-		Flurry = 16,
-		
-		Bloodthirst = 17,
 	}
 --Protection
 	ids.Prot_Ability = {
 		Bloodrage = 2687,
 		ConcussionBlow = 12809,
 		DefensiveStance = 71,
+		DevastateRank1 = 20243,
+		DevastateRank2 = 30016,
+		DevastateRank3 = 30022,
+		DevastateRank4 = 47497,
+		DevastateRank5 = 47498,
 		Disarm = 676,
+		Intervene = 3411, -- wrath
 		LastStand = 12975,
 		RevengeRank1 = 6572,
 		RevengeRank2 = 6574,
 		RevengeRank3 = 7379,
 		RevengeRank4 = 11600,
 		RevengeRank5 = 11601,
-		RevengeRank6 = 25288,--		
+		RevengeRank6 = 25288,
+		RevengeRank7 = 25269, -- TBC
+		RevengeRank8 = 30357, -- TBC
+		RevengeRank9 = 57823, -- wrath
 		ShieldBashRank1 = 72,
-		ShieldBashRank2 = 1671,
-		ShieldBashRank3 = 1672,
+		--ShieldBashRank2 = 1671,
+		--ShieldBashRank3 = 1672,
 		ShieldBlock = 2565,
 		ShieldSlamRank1 = 23922,
 		ShieldSlamRank2 = 23923,
 		ShieldSlamRank3 = 23924,
 		ShieldSlamRank4 = 23925,
+		ShieldSlamRank5 = 25258, -- TBC
+		ShieldSlamRank6 = 30356, -- TBC
+		ShieldSlamRank7 = 47487, -- wrath
+		ShieldSlamRank8 = 47488, -- wrath
 		ShieldWall = 871,
+		Shockwave = 46968, -- wrath
+		SpellReflection = 23920,  -- TBC
 		SunderArmorRank1 = 7386,
-		SunderArmorRank2 = 7405,
-		SunderArmorRank3 = 8380,
-		SunderArmorRank4 = 11596,
-		SunderArmorRank5 = 11597,
+		--SunderArmorRank2 = 7405,
+		--SunderArmorRank3 = 8380,
+		--SunderArmorRank4 = 11596,
+		--SunderArmorRank5 = 11597,
 		Taunt = 355,
-	}
-	ids.Prot_Talent = {
-		ShieldSpecialization = 1,
-		Anticipation = 2,
-		 
-		ImprovedBloodrage = 3,
-		Toughness = 4,
-		IronWill = 5,
-		 
-		LastStand = 6,
-		ImprovedShieldBlock = 7,
-		ImprovedRevenge = 8,
-		Defiance = 9,
-		 
-		ImprovedSunderArmor = 10,
-		ImprovedDisarm = 11,
-		ImprovedTaunt = 12,
-		 
-		ImprovedShieldWall = 13,
-		ConcussionBlow = 14,
-		ImprovedShieldBash = 15,
-		 
-		OneHandedWeaponSpecialization = 16,
-		 
-		ShieldSlam = 17,
+		Vigilance = 50720, -- wrath
 	}
 -- Auras
 	ids.Player_Buff = {
+		Slam = 46916,
+		OverPower = 68051,
+		SuddenDeath = 52437,
 	
 	}
 	ids.Player_Debuff = {
 
 	}
 	ids.Target_Debuff = {
-	
+		ExposeArmor = 8647,
+		SunderArmor = 58567,
+	}
+	ids.optionMaxIds = {
+		
 	}

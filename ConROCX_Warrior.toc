@@ -1,0 +1,11 @@
+## Title:-|cffFFFFFFConROCX|r- |cffC79C6EWarrior|r
+## Version: 2.0.2
+## Author: Vae, 2.0.2 updated by Lith
+## Interface: 30403
+## SavedVariablesPerCharacter: ConROCWarriorSpells
+## Dependencies: ConROCX
+## LoadOnDemand: 1
+
+warrior_ids.lua
+warrior_spellmenu.lua
+warrior.lua
