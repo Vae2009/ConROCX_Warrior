@@ -1,6 +1,6 @@
 ## Title:-|cffFFFFFFConROCX|r- |cffC79C6EWarrior|r
-## Version: 2.0.2
-## Author: Vae, 2.0.2 updated by Lith
+## Version: 3.4.3
+## Author: Vae, 3.4.3 updated by Lith
 ## Interface: 30403
 ## SavedVariablesPerCharacter: ConROCWarriorSpells
 ## Dependencies: ConROCX
